@@ -174,7 +174,8 @@ body {
   height: 4.8rem;
 }
 
-.mobile-nav-icon[name="close-outline"] {
+.mobile-nav-icon[name="close-outline"],
+.mobile-nav-icon[name="menu-outline"] {
   display: none;
 }
 
