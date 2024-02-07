@@ -1,0 +1,340 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Line heights
+Default: 1
+paragraph default: 1.5
+small: 1.05
+
+- Font weights:
+Default: 400
+Medium: 500
+SemiBold: 600
+Bold: 700
+
+--- 02 COLORS
+
+- Primary: 
+#497255
+- Tints:
+#eaf5ec
+- Shades:
+- Grays:
+#ddd
+#555
+#333
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 56 / 64 / 80 / 96 / 128
+
+
+
+*/
+
+/*******************************/
+/* GENERAL REUSABLE SECTION */
+/*******************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik";
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.02;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.5px;
+
+  /* font-weight: 500; */
+}
+
+/*******************************/
+/* HEADER SECTION */
+/*******************************/
+
+.header {
+  display: flex;
+  background-color: #eaf5ec;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 3.6rem;
+  /* margin: 3.2rem 0; */
+}
+
+.logo {
+  width: 6.2rem;
+  height: 6.2rem;
+}
+
+.header-logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-name {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+/*******************************/
+/* NAVIGATION SECTION */
+/*******************************/
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+  justify-content: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  font-size: 1.8rem;
+  transition: color 0.3s linear;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #497255;
+}
+
+.mobile-nav-btn {
+  border: none;
+  background-color: none;
+  outline: none;
+}
+
+.mobile-nav-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/*******************************/
+/* HERO SECTION */
+/*******************************/
+
+.section-hero {
+  background-color: #eaf5ec;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100rem;
+  margin: 0 auto;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 0 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/*******************************/
+/* SERVICES SECTION */
+/*******************************/
+
+.feature-img {
+  width: 100%;
+}
+
+.feature-subheading {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #497255;
+  /* margin-top: 3.2rem; */
+  letter-spacing: 1.8px;
+  display: inline-block;
+  /* padding-top: 2rem;
+   */
+  margin: 3.2rem 0;
+}
+
+.grid--center {
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+
+.feature-description {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  gap: 5.2rem;
+  margin-top: 2.2rem;
+}
+
+/*******************************/
+/* WHY US SECTION */
+/*******************************/
+
+.section-why-us {
+  background-color: #eaf5ec;
+  max-width: 100vw;
+  /* margin: 0 auto; */
+  align-items: center;
+  padding: 6.4rem 3.2rem;
+}
+
+.why-us-box {
+  align-items: center;
+  gap: 5.2rem;
+}
+.why-us-img {
+  width: 100%;
+}
+
+.why-us-description {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/*******************************/
+/* FOOTER SECTION */
+/*******************************/
+
+.footer {
+  padding: 5.2rem 0;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #ddd;
+}
+
+.logo-box {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1.2rem;
+  align-items: center;
+  /* justify-content: center; */
+  /* padding: 9.6rem 0; */
+  margin-bottom: 1rem;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.social-logos {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  /* text-transform: uppercase; */
+  color: #777;
+  font-weight: 500;
+}
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  /* stroke: #497255; */
+  fill: #497255;
+}
+
+.footer-address-box {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.address {
+  font-style: normal;
+}
