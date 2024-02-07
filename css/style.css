@@ -165,13 +165,15 @@ body {
 
 .mobile-nav-btn {
   border: none;
-  background-color: none;
+  background-color: inherit;
   outline: none;
+  display: none;
 }
 
 .mobile-nav-icon {
   width: 4.8rem;
   height: 4.8rem;
+  background-color: none;
 }
 
 .mobile-nav-icon[name="close-outline"],

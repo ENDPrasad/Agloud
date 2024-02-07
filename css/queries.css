@@ -34,6 +34,12 @@
   .hero {
     gap: 7.2rem;
   }
+  .mobile-nav-btn {
+    display: block;
+  }
+  .mobile-nav-icon[name="menu-outline"] {
+    display: block;
+  }
 }
 
 /*******************************/
