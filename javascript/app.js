@@ -26,3 +26,29 @@ navItems.forEach((link) => {
     header.classList.toggle("nav-open");
   });
 });
+
+////////////////////////////////////////////////
+// Sticky Nav bar
+
+const hero_section = document.querySelector(".section-hero");
+const header_section = document.querySelector(".header");
+
+const obs = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+obs.observe(hero_section);

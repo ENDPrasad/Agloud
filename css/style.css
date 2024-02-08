@@ -182,6 +182,22 @@ body {
   display: none;
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eaf5ecee;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .hero {
+  margin-top: 9.6rem;
+}
+
 /*******************************/
 /* HERO SECTION */
 /*******************************/
@@ -286,7 +302,7 @@ body {
   padding: 5.2rem 0;
   /* align-items: center; */
   justify-content: center;
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 .logo-box {
