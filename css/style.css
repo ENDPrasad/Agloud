@@ -54,6 +54,7 @@ Bold: 700
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -319,6 +320,7 @@ body {
   /* text-transform: uppercase; */
   color: #777;
   font-weight: 500;
+  margin-top: 1.8rem;
 }
 .footer-link {
   text-decoration: none;
@@ -329,6 +331,7 @@ body {
   height: 2.4rem;
   /* stroke: #497255; */
   fill: #497255;
+  /* padding-bottom: 1.2rem; */
 }
 
 .footer-address-box {

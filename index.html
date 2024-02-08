@@ -25,16 +25,20 @@
   <body>
     <header class="header">
       <div class="header-logo-box">
-        <img class="logo" src="assets/agloud.png" alt="" />
+        <a href="#">
+          <img class="logo" src="assets/agloud.png" alt="Agloud logo" />
+        </a>
         <p class="brand-name">Agloud</p>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">About</a></li>
-          <li><a class="main-nav-link" href="#">Services</a></li>
+          <li><a class="main-nav-link" href="#services">Services</a></li>
           <li><a class="main-nav-link" href="#">Projects</a></li>
-          <li><a class="main-nav-link" href="#">Why Us</a></li>
-          <li><a class="main-nav-link cta-btn" href="#">Contact Us</a></li>
+          <li><a class="main-nav-link" href="#why-us">Why Us</a></li>
+          <li>
+            <a class="main-nav-link cta-btn" href="#contact">Contact Us</a>
+          </li>
         </ul>
       </nav>
       <button class="mobile-nav-btn">
@@ -65,7 +69,7 @@
         </div>
       </section>
 
-      <section class="section-feature">
+      <section class="section-feature" id="services">
         <div class="feature-header container">
           <span class="feature-subheading"> Our Services </span>
           <h2 class="heading-secondary">
@@ -139,7 +143,7 @@
         </section>
       </section>
 
-      <section class="section-why-us">
+      <section class="section-why-us" id="why-us">
         <div class="container grid grid--2-cols why-us-box">
           <div class="why-us-text-box">
             <h3 class="heading-secondary">Why Choose Us</h3>
@@ -159,7 +163,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container grid grid--3-cols">
         <div>
           <div class="footer-logo-box">
@@ -168,7 +172,7 @@
               <p class="brand-name">Agloud</p>
             </div>
             <p class="copyright">
-              copyright &copy; <span id="year">2021</span>. All rights reserved.
+              Copyright &copy; <span id="year">2021</span>. All rights reserved.
             </p>
           </div>
         </div>

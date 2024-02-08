@@ -170,4 +170,30 @@
   .hero-img {
     width: 100%;
   }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-img[alt="App Development image"] {
+    grid-row: 4;
+  }
+
+  .feature-img[alt="Cloud Integration image"] {
+    grid-row: 8;
+  }
+}
+
+/*******************************/
+/* BELOW 400px */
+/*******************************/
+
+@media (max-width: 19em) {
+  html {
+    font-size: 28%;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
 }
